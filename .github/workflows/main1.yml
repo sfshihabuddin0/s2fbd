@@ -21,4 +21,4 @@ jobs:
       - name: Sleep for 5 minutes
         run: |
           Write-Host "Sleeping for 5 minutes..."
-          Start-Sleep -Seconds 300
+          Start-Sleep -Seconds 3600
