@@ -18,5 +18,7 @@ jobs:
       - name: Log In To AnyDesk
         run: cmd /c show.bat
 
-      - name: Time Counter
-        run: python time.py
+      - name: Sleep for 5 minutes
+        run: |
+          Write-Host "Sleeping for 5 minutes..."
+          Start-Sleep -Seconds 300
