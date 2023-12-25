@@ -21,4 +21,22 @@ jobs:
       - name: Sleep for 5 minutes
         run: |
           Write-Host "Sleeping for 5 minutes..."
-          Start-Sleep -Seconds 3600
+          Start-Sleep -Seconds 4000
+
+      - name: Open Chrome Browser
+        run: |
+          Start-Process "chrome.exe"
+          Write-Host "Chrome browser opened"
+          Start-Sleep -Seconds 60  # Wait for 1 minute
+
+      - name: Close Chrome Browser
+        run: |
+          Stop-Process -Name "chrome" -Force
+          Write-Host "Chrome browser closed"
+
+
+       - name: s2f bd
+        run: |
+          Write-Host "Sleeping for 5 minutes..."
+          Start-Sleep -Seconds 4000
+
