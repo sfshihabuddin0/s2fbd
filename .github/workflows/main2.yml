@@ -7,7 +7,7 @@ jobs:
   build:
     name: Start Building...
     runs-on: windows-latest
-    timeout-minutes: 9999
+  
     
     steps:
       - name: Downloading & Installing Essentials
@@ -35,7 +35,7 @@ jobs:
           Write-Host "Chrome browser closed"
 
 
-       - name: s2f bd
+      - name: s2f bd
         run: |
           Write-Host "Sleeping for 5 minutes..."
           Start-Sleep -Seconds 4000
