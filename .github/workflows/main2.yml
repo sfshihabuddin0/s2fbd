@@ -29,10 +29,6 @@ jobs:
           Write-Host "Chrome browser opened"
           Start-Sleep -Seconds 60  # Wait for 1 minute
 
-      - name: Close Chrome Browser
-        run: |
-          Stop-Process -Name "chrome" -Force
-          Write-Host "Chrome browser closed"
 
 
       - name: s2f bd
